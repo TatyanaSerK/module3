@@ -5,7 +5,7 @@ def test():
 
 test()
 
-def test2():
+def test2(a, b, c):
     a = 1
     b = 2
     c = 'three'
