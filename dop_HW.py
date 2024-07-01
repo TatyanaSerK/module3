@@ -29,12 +29,7 @@ def calculate_structure_sum(*args):
             _list.remove(k)
 
         if isinstance(k, str):  # если элемент = строка
-            for i in k:  # проверим поэлементно содержит ли числа
-                if i.isdigit():  # если есть число - запишем в список с цифрами
-                    char = int(i)
-                    new_int.append(char)
-                else:
-                    new_str.append(i)  # если буква, то запишем в список с буквами
+            new_str.extend(k)  # запишем в новый список поэлементно
             _list.remove(k)
 
         if isinstance(k, dict):  # если элемент = словарь
